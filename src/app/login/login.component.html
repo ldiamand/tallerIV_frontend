@@ -1,0 +1,6 @@
+<p>Login</p>
+<form [formGroup]="form">
+    <p>Usuario:<input type="text" formControlName="username" /></p>
+    <p>Clave:<input type="password" formControlName="password" /></p>
+    <p><input (click)="submitForm()" type="button" value="Ingresar"/></p>
+  </form>

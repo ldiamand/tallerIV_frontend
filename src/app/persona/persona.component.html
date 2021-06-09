@@ -1,0 +1,15 @@
+
+<h1>Personas</h1>
+<ul>
+  <li *ngFor="let persona of personas">
+    {{ persona.id }} | {{ persona.nombre }} | {{ persona.apellido }}
+  </li>
+
+  <form [formGroup]="form">
+
+    <p>Nombre:<input type="text" formControlName="nombre" /></p>
+    <p>Apellido:<input type="text" formControlName="apellido" /></p>
+    <p><input (click)="submitForm()" type="button" value="Enviar"/></p>
+  </form>
+
+</ul>
